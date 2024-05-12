@@ -29,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
         Button Vkl = findViewById(R.id.Vkl);
 
 
+        selectedTimeTextView = findViewById(R.id.selected_time_text_view);
+        selectedDateTextView = findViewById(R.id.selected_date_text_view);
+        Button alertDialogButton = findViewById(R.id.alert_dialog_button);
+
         Dialog dialog = new Dialog(MainActivity.this);
         dialog.setContentView(R.layout.fragment_naaaa);
 
@@ -47,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 stopService(stopIntent);
             }
         });
-        Button alertDialogButton = findViewById(R.id.alert_dialog_button);
+
         alertDialogButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

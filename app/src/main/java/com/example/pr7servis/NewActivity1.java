@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 public class NewActivity1 extends AppCompatActivity {
 
-    private TextView welcomeTextView;
+    private TextView ABOBA;
     private Button backButton;
 
     @Override
@@ -17,7 +17,7 @@ public class NewActivity1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new1);
 
-        welcomeTextView = findViewById(R.id.textView);
+        ABOBA = findViewById(R.id.welcome_text_view);
         backButton = findViewById(R.id.back_button);
 
         backButton.setOnClickListener(new View.OnClickListener() {
